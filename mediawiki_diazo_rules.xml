@@ -1,0 +1,39 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <theme href="theme/theme_wide.html" />
+
+    <replace content-children="/html/head/title"
+             theme-children="/html/head/title" />
+    <!--<append content="elements:/html/head/link"
+      theme="children:/html/head" nocontent="ignore" /> -->
+    <after content="/html/head/script"
+           theme-children="/html/head" />
+    <!--<append content="elements:/html/head/style"
+      theme="children:/html/head" nocontent="ignore" />-->
+    
+    <drop css:theme="#service" />
+      
+    <replace css:theme="#bc h6" css:content-children="#p-personal"  />
+    
+    <drop css:theme="div#lang" />
+    
+    <replace css:theme-children="#content" css:content-children="#content" />
+    <!-- You could move dynamically-generated (or managed) navigation into the page with this:
+    <replace content="children:#menu" href="/theme-files/deliv-sidebar.html" theme="children:#sidebar" />
+    
+    -->
+    <after css:theme-children="#mainNav h6" css:content-children="#p-navigation" />
+    <after css:theme-children="#mainNav h6" css:content-children="#p-tb" />
+    
+    
+    <drop css:theme="#fn li:nth-child(4)" />
+    <drop css:theme="#fn li:nth-child(3)" />
+    
+    <after css:theme="#fn li:last-child" css:content="#p-views li" />
+
+</rules>
+
+

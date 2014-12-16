@@ -1,0 +1,65 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <theme href="theme/theme.html" />
+    <notheme if-path="editor.php" />
+    <notheme if-path="preview.php" />
+    <notheme if-path="wizardlistener.php" />
+    <notheme if-path="binary_download.php" />
+    
+    
+    <replace content-children="/html/head/title"
+             theme-children="/html/head/title" />
+             
+    <!--<append content="elements:/html/head/link"
+      theme="children:/html/head" nocontent="ignore" /> -->
+      
+    <after content="/html/head/script"
+            theme-children="/html/head" />
+    <after content="/html/head/link"
+            css:theme="link[media=print]" />
+
+<!--
+    <replace theme="children:#content" content="children:#oadmincontent" nocontent="ignore" />
+    <replace theme="children:#mainNav" content="children:#adminmainmenu" nocontent="ignore" />
+-->
+
+    <drop css:theme="#lang" />
+    <drop css:theme="#fn li:nth-child(4)" />
+    <drop css:theme="#fn li:nth-child(3)" />
+
+
+    <before css:theme-children="#footer" css:content-children="#copyright" method="raw"/> 
+    <drop css:content-children="#copyright" />
+    
+    <!--
+    <prepend theme="children:#footer" content="children:#copyright" href="https://www.lehrevaluation.uni-muenchen.de/evasys/indexstud.php" />
+-->
+    <drop css:content="#votumhead"  />
+    <drop css:content="#surveyheaderTopBg" />
+    <drop css:content="#surveyheaderBottomBg" />
+    
+    <drop css:content="#loginhead" />
+    <drop css:content="#adminheadstart a" />
+    <drop css:content=".subunitlogo" />
+    
+    <drop css:content=".page-startseite #maindisplay fieldset" />
+<!--
+    <replace theme="children:#dep-logo" content="elements:#surveyheader" nocontent="ignore" /> 
+-->
+    <replace css:theme="#dep-logo" >
+        <a id="dep-logo" href="https://www2.lehrevaluation.uni-muenchen.de/evasys/indexeva.php" titel="Lehrevaluation" >Lehrevaluation</a>
+    </replace>
+
+
+    <replace css:theme-children="#main" content-children="/html/body" />
+
+
+    <!--
+    <append content="elements:/html/head/style"
+            theme="children:/html/head" nocontent="ignore" />
+    -->
+
+</rules>
