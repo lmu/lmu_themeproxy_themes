@@ -1,0 +1,9 @@
+Paste==1.7.5.1
+PasteDeploy==1.5.2
+PasteScript==1.7.5
+diazo==1.1.0
+experimental.cssselect==0.3
+future==0.14.3
+lxml==3.4.1
+six==1.8.0
+wsgiref==0.1.2
