@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <!-- Apply the following rules to standard Plone pages -->
+    <rules css:if-content="#visual-portal-wrapper">
+
+        <theme href="theme.html" />
+
+        <!-- Replace title with Plone's page title  -->
+        <replace css:theme="html head title" css:content="html head title" />
+
+        <!-- Copy base tag and script tags from Plone -->
+        <after css:theme-children="html head" css:content="html head base" />
+        <after css:theme-children="html head" css:content="html head script" />
+
+        <!-- Insert your own rules here -->
+        
+        <replace css:theme="form#cref_iframe" css:content="form[name=searchform]" />
+        <copy attributes="href accesskey title" css:theme="a#dep-logo" css:content="a#portal-logo" />
+        
+        <replace css:theme="html body #mainNav span#LMUnav" css:content-children="#portal-column-one" />
+        <after css:theme="html body #service h6" css:content-children="#portal-column-two" css:if-content="#portal-column-two" />
+        <!--<drop css:theme="div#service" css:if-content="#portal-column-two" />-->
+        
+        <!-- Breadcrumb bar -->
+i<!--        <drop css:content="#breadcrumbs-you-are-here" />-->
+        <drop css:content="#portal-breadcrumbs" />
+        <after css:theme="html body #bc h6" css:content="#portal-breadcrumbs" method="raw" /> 
+        
+        <replace css:theme-children="#content" css:content-children="#portal-column-content" />
+        
+        <replace css:theme="div#lang ul" css:content="ul#portal-languageselector" />
+        
+        <merge attributes="style" css:theme="div#home" css:content="div#portal-logo" />
+        <merge attributes="style" css:theme="div#bar" css:content="div#portal-logo" />
+        <merge attributes="style" css:theme="div#bc" css:content="div#portal-logo" />
+        <replace css:theme-children="div#home" css:content-children="div#portal-logo" />        
+        
+        
+        <merge attributes="href accesskey" css:theme="a#sitemap" css:content="#siteaction-sitemap a" />
+        <merge attributes="class dir" css:theme="body" css:content="body" />
+        
+        <replace attributes="href accesskey" css:theme="a#imprint" css:content="li#siteaction-imprint a" />
+        <replace attributes="href accesskey" css:theme="a#contact" css:content="li#siteaction-contact a" />
+    
+        <!-- Support for Plone.app.toolbar -->
+        <append theme="/html/body" content="//div[@data-iframe='toolbar']" />
+        <append theme="/html/head">
+            <script type="text/javascript" src="++resource++plone.app.toolbar/src/iframed.js"></script>
+        </append>
+    </rules>
+</rules>

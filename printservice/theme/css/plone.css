@@ -1,0 +1,253 @@
+/**
+ * Plone specific styles for diazo and deliverance
+ */
+
+#home,.home {
+    padding-top: 12px;
+    height: 124px;
+}
+
+#home a {
+    display: inline-block;
+    overflow: hidden;
+    height: 90px;   
+    color: transparent;
+    background-repeat: repeat;
+    background-color: transparent;
+    background-position: 0 0;
+    background-attachment: scroll;
+    text-transform: uppercase;
+}
+
+#home a#lmu-logo {
+    width: 192px;
+    background-image: url('../img/lmu-logo.png');
+    margin-left: 12px;
+    
+}
+
+.gray-white a#lmu-logo {
+    background-position: 0 0;
+
+}
+
+#home a#dep-logo {
+    min-width: 320px;
+    max-width: 545px;
+    width: 545px;
+    background-image: url('../img/blank.gif');
+    margin-left: 12px;
+}
+
+
+
+#mainNav ul li a {
+    background-color: #FFF;
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+
+#mainNav a.navTreeCurrentItem {
+    background: none repeat scroll 0 0 #D1D0CD;
+
+}
+
+#mainNav ul.navTreeLevel0 > li {
+    border-bottom: 1px solid #D8D8D8;
+    padding: 1px 0;
+}
+
+#mainNav ul.navTreeLevel0 > li > a {
+    text-transform: uppercase;
+    font-size: 1.167em;
+    padding: 5px 5px 6px 10px;
+}
+
+#mainNav ul.navTreeLevel1 > li > a {
+    font-size: 1em;
+    line-height: 1.333em;
+    padding: 4px 5px 5px 20px;
+}
+
+#mainNav ul.navTreeLevel2 > li a {
+    font-size: 0.917em;
+    line-height: 1.273em;
+}
+
+#mainNav ul.navTreeLevel2 > li > a {
+    padding: 4px 5px 5px 30px;
+}
+
+#mainNav ul.navTreeLevel3 > li > a {
+    padding: 4px 5px 5px 40px;
+}
+
+#mainNav ul.navTreeLevel5 > li > a {
+    padding: 4px 5px 5px 50px;
+}
+
+div.LSBox {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #888888;
+    height: 19px;
+    width: 186px;
+    margin: 5px 0 0 10px;
+    overflow: hidden;
+
+}
+
+
+div.LSBox input {
+    display: inline-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+input#searchGadget {
+    background-position: right 2px;
+    background-repeat: no-repeat;
+    border: 1px solid #FFFFFF;
+    color: #666666;
+    height: 17px;
+    line-height: 17px;
+    width: 165px;
+}
+
+
+input.searchButton {
+    background: url("http://cms-static.uni-muenchen.de/default/lmu/img/search.png") no-repeat scroll 0 0 transparent;
+    border: 0 none;
+    height: 19px;
+    width: 19px;
+    color:transparent;
+}
+
+div.searchSection {
+    display: none;
+
+}
+
+div#bc a {
+    color: #666;
+
+}
+
+#breadcrumbs-you-are-here {
+    display:none;
+
+}
+
+#service dt {    
+    background: none repeat scroll 0 0 #E0DFDC;
+    color: #111111;
+    font-family: verdana,helvetica,arial,sans-serif;
+    font-size: 0.917em;
+    font-weight: normal;
+    line-height: 1.25em;
+    margin: 0;
+    padding: 3px 5px;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+#service dd {
+    padding: 3px 5px;
+}
+
+div.portletWrapper {
+    margin-bottom: 2em;
+}
+.portletCalendar dt a#calendar-previous {
+    float: left;
+    margin: 0 -0.5em;
+    padding: 0 1em;
+}
+
+.portletCalendar dt a#calendar-next {
+    float: right;
+    margin: 0 -0.5em;
+    padding: 0 1em;
+}
+
+.ploneCalendar {
+    border-spacing: 0;
+    width: 100%;
+}
+
+.ploneCalendar td {
+    text-align: right;
+    text-decoration: none;
+    color: #063;
+    border-bottom: 1px solid #F0EEEB;
+}
+
+.ploneCalendar th {
+    text-align: center;
+    color: #808080;
+}
+
+.ploneCalendar td.todaynoevent {
+    font-weight: bold;
+    color: #FFF;
+    background-color: #063;
+
+}
+
+.ploneCalendar td a {
+    text-decoration: none;
+    
+}
+
+.ploneCalendar td a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+.portletRss dd {
+    border-bottom: 1px solid #F0EEEB;
+    margin-bottom: 5px;
+
+}
+
+div#lang img {
+    vertical-align: bottom;
+
+}
+div#lang ul {
+    float: right;
+    line-height: 31px;
+}
+
+
+div#lang li {
+//    background: url("http://cms-static.uni-muenchen.de/default/lmu/img/bar-separator.png") repeat-y scroll 0 0 transparent;
+    color: #FFFFFF;
+    float: left;
+    padding: 0 10px;
+    vertical-align: sub;
+}
+
+div#lang ul li a {
+    color : #FFF;
+
+}
+
+li.currentLanguage {
+    display: none;
+
+}
+
+.section-front-page div#bc a {
+    color: transparent;
+}

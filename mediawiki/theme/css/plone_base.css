@@ -1,0 +1,62 @@
+
+
+.hiddenStructure {
+    background: none repeat scroll 0 0 transparent;
+    color: transparent;
+    border: medium none;
+    display: block;
+    height: 0.1em;
+    margin: -0.1em 0 0 -0.1em;
+    margin-left: -5000px;
+    overflow: hidden;
+    padding: 0;
+    width: 1px;
+}
+
+div.managePortletsLink, a.managePortletsFallback {
+    background: none repeat scroll 0 0 #DDDDDD;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    font-size: 80%;
+    margin: 1em auto 1em;
+    padding: 0.25em 0.5em;
+    text-align: center;
+}
+
+div#search form#searchform {
+    display: none;
+
+}
+
+#content ul.formTabs {
+    background-color: #DDDDDD;
+    border: 0.3em solid #DDDDDD;
+}
+
+#edit-bar, #content ul.formTabs, #content-core ul.formTabs {
+    border-style: solid solid none;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    display: block;
+    margin-left: 0;
+    list-style: none outside none;
+}
+
+#content li.formTab, #content-core li.formTab {
+    display: inline;
+    margin: 0.25em;
+    background-image: none;
+}
+
+#content li, dl.portlet li {
+    display: list-item;
+    line-height: 1.5em;
+    margin-bottom: 0.25em;
+}
+
+#content-views li.selected a, #content-views li a:hover, #content li.formTab a.selected, #content li.formTab a:hover, #content-core li.formTab a.selected, #content-core li.formTab a:hover {
+    background: none repeat scroll 0 0 White;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    color: Black;
+    padding: 0.25em 0.5em;
+}

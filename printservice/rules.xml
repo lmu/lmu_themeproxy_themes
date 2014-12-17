@@ -1,0 +1,62 @@
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+    <theme href="theme/theme.html" />
+    <notheme href="afunctions.cmf" />
+    
+    
+    <replace content-children="/html/head/title"
+             theme-children="/html/head/title" />
+             
+    <!--<append content="elements:/html/head/link"
+      theme="children:/html/head" nocontent="ignore" /> -->
+      
+    <after content="/html/head/script"
+            theme-children="/html/head" />
+    <after content="/html/head/link"
+            css:theme="link[media=print]" />
+
+<!--
+    <replace theme="children:#content" content="children:#oadmincontent" nocontent="ignore" />
+    <replace theme="children:#mainNav" content="children:#adminmainmenu" nocontent="ignore" />
+-->
+
+    <drop css:theme="#search" />
+<!--
+    <drop css:theme="#fn li:nth-child(3)" />
+    <drop css:theme="#fn li:nth-child(2)" />
+-->
+
+    <after css:theme-children="#footer" css:content="#ft" /> 
+    
+    <replace css:theme-children="#lang" css:content="#topnav" />
+
+    <replace css:theme="#dep-logo" >
+        <a id="dep-logo" href="https://www.printservice.uni-muenchen.de/" titel="Printservice" >Printservice</a>
+    </replace>
+
+
+<drop css:content="table" attributes="style" />
+
+<rules if-path="login.cfm" >
+ 
+    <replace css:theme-children="#contentcontainer" css:content-children="#bd" />
+    <replace css:theme-children="#service" css:content="#content" href="http://www.ub.uni-muenchen.de/arbeiten/lernumgebung/index.html" method="document" />
+    <drop css:theme="#mainNav" />
+
+</rules>
+<rules if-not-path="login.cfm" >
+    <replace css:theme-children="#main" css:content-children="#bd" />
+    <before css:theme-children="#main" css:content="#mainnav" />
+</rules>
+
+    <drop attributes="style" css:content="#ft span" />
+
+    <!--
+    <append content="elements:/html/head/style"
+            theme="children:/html/head" nocontent="ignore" />
+    -->
+
+</rules>

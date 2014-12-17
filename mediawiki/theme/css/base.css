@@ -1,0 +1,154 @@
+/**
+ * Plone specific styles for diazo and deliverance
+ */
+ 
+.kopfbild {
+    background-image: url('../img/default.jpg');
+}
+
+.mod-bar .m-link {
+    color: #000;
+}
+
+#home,.home {
+    padding-top: 12px;
+    height: 124px;
+}
+
+#home a {
+    display: inline-block;
+    overflow: hidden;
+    height: 90px;   
+    color: transparent;
+    background-repeat: repeat;
+    background-color: transparent;
+    background-position: 0 0;
+    background-attachment: scroll;
+    text-transform: uppercase;
+}
+
+#home a#lmu-logo {
+    width: 192px;
+    background-image: url('../img/blank.png');
+    margin-left: 12px;
+    
+}
+
+.gray-white a#lmu-logo {
+    background-position: 0 0;
+
+}
+
+#home a#dep-logo {
+    min-width: 320px;
+    max-width: 545px;
+    width: 545px;
+    background-image: url('../img/blank.gif');
+    margin-left: 12px;
+}
+
+#mainNav h5 {
+    background-color: #D8D8D8;
+    color: #333;
+    display: block;
+    text-decoration: none;
+  
+    text-transform: uppercase;
+    font-size: 1.167em;
+    //border: 1px solid #333;
+    font-size: 80%;
+    padding: 5px 5px 6px 10px;
+    margin-top: 20px;
+}
+
+#mainNav h5:nth-of-type(1)
+ {
+    margin-top:0; 
+}
+
+#mainNav ul li a {
+    background-color: #FFF;
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+
+#mainNav a.navTreeCurrentItem {
+    background: none repeat scroll 0 0 #D1D0CD;
+
+}
+
+#mainNav ul > li {
+    border-bottom: 1px solid #D8D8D8;
+    padding: 1px 0;
+}
+
+#mainNav ul > li > a {
+    text-transform: uppercase;
+    font-size: 1.167em;
+    padding: 5px 5px 6px 10px;
+}
+
+div#bc a {
+    color: #666;
+
+}
+
+div#bc ul {
+    list-style: none outside none;
+}
+
+div#bc ul li {
+    float: left;
+    margin-right: 5px;
+    padding-left: 8px;
+    white-space: nowrap;
+  
+}
+
+div#bc h5 {
+    float: left; 
+}
+
+.content {
+    min-height: 0;
+
+}
+
+#main {
+    background-color: #fff;
+
+}
+
+.formcontent {
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#surveyheader {
+    background: none;
+}
+
+#login, #submitted {
+    background: none;
+}
+
+fieldset.m-search-wrapper {
+    padding: 0 !important;
+}
+#tdhead {
+    height: 83px;
+}
+
+#adminmainmenu, #usermainmenu {
+    margin-left: 4px;
+}
+
+#submenu_wrapper {
+    margin-bottom: 25px;
+}
+
+.page-startseite #maindisplay fieldset {
+    display: none;
+}
