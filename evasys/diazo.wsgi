@@ -1,5 +1,5 @@
 import site
-site.addsitedir('/srv/www/lmu_themeproxy_themes/lib/python2.6/')
+site.addsitedir('/srv/www/lmu_themeproxy_themes/lib/python2.6/site-packages')
 
 def application(environ, start_response):
     from paste.deploy import loadapp
