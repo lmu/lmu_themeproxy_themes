@@ -121,6 +121,21 @@ div#bc h5 {
 
 }
 
+#main li {
+    list-style-type: square;
+    list-style-position: outside;
+    margin-left: 20px;
+}
+
+#main h2 {
+    text-transform: none;
+}
+
+#main h2,
+#main h3 {
+    margin-bottom: 0.5em;
+}
+
 .formcontent {
     margin-left: 0;
     padding: 0;
@@ -203,8 +218,8 @@ fieldset.m-search-wrapper {
 }
 
 #main > div {
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
 }
 
 #ft {

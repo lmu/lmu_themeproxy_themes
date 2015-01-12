@@ -29,12 +29,15 @@
     <drop css:content="table" attributes="style" />
 
     <rules if-path="login.cfm" >
-        <replace css:theme-children="#contentcontainer" css:content-children="#bd" />
-        <replace css:theme-children="#service" css:content="#content" href="http://www.ub.uni-muenchen.de/arbeiten/lernumgebung/index.html" method="document" /> 
+        <replace css:theme-children="#content" css:content-children="#bd" />
+        <!--<replace css:theme-children="#service" css:content="#content" href="http://www.ub.uni-muenchen.de/arbeiten/lernumgebung/index.html" method="document" /> -->
         <drop css:theme="#mainNav" />
     </rules>
     <rules if-not-path="login.cfm" >
-        <replace css:theme-children="#main" css:content-children="#bd" />
+        <replace css:theme-children="#content" css:content-children="#bd" />
+        <!--<replace css:theme-children="#main" css:content-children="#bd" />-->
+        <drop css:theme="#mainNav" />
+        <drop css:theme="#above-content" />
         <before css:theme-children="#main" css:content="#mainnav" />
     </rules>
 
