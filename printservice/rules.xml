@@ -25,19 +25,19 @@
     <replace css:theme-children="#lang" css:content="#topnav" />
 
     <replace css:theme="#dep-logo" >
-        <a id="dep-logo" href="https://www.printservice.uni-muenchen.de/" titel="Printservice" >Printservice</a>
+        <a id="dep-logo" href="https://www.printservice.uni-muenchen.de/" titel="Printservice" >Printservice - Cloud-Printing</a>
     </replace>
 
     <drop css:content="table" attributes="style" />
 
-    <replace css:theme-children="#service" css:content-children="#content" href="http://www.ub.uni-muenchen.de/arbeiten/drucken/drucken/index.html" if="$lang='de'" />
-    <replace css:theme-children="#service" css:content-children="#content" href="http://www.ub.uni-muenchen.de/arbeiten/drucken/mensakarte/index.html" if="$lang='en'" />
+    <replace css:theme-children="#service" css:content-children="#hinweise_de" href="http://helpdesk.campus.lmu.de/cloud-printing/text-cloud-printing/index.html" if="$lang='de'" />
+    <replace css:theme-children="#service" css:content-children="#hinweise_en" href="http://helpdesk.campus.lmu.de/cloud-printing/text-cloud-printing/index.html" if="$lang='en'" />
 
     <rules if-path="login.cfm" >
         <replace css:theme-children="#content" css:content-children="#bd" />
         <!--<replace css:theme-children="#service" css:content="#content" href="http://www.ub.uni-muenchen.de/arbeiten/lernumgebung/index.html" method="document" /> -->
-        <replace css:theme-children="#above-content" css:content-children="#content" href="http://www.ub.uni-muenchen.de/arbeiten/drucken/drucken/index.html" if="$lang='de'" />
-        <replace css:theme-children="#above-content" css:content-children="#content" href="http://www.ub.uni-muenchen.de/arbeiten/drucken/mensakarte/index.html" if="$lang='en'" />
+        <replace css:theme-children="#above-content" css:content-children="#anmeldung_de" href="http://helpdesk.campus.lmu.de/cloud-printing/text-cloud-printing/index.html" if="$lang='de'" />
+        <replace css:theme-children="#above-content" css:content-children="#anmeldung_en" href="http://helpdesk.campus.lmu.de/cloud-printing/text-cloud-printing/index.html" if="$lang='en'" />
         <drop css:theme="#mainNav" />
     </rules>
     <rules if-not-path="login.cfm" >

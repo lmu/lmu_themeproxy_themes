@@ -16,15 +16,10 @@ class PrintserviceHelperWSGIModule:
         cookies = Cookie.BaseCookie(raw_cookies)
         if self.cookie_key in cookies:
             self.value = cookies.get(self.cookie_key).value
-            print 'Extracted Cookie {key}: {value}'.format(
-                key=self.cookie_key,
-                value=self.value)
 
         query_string = parse_qs(environ.get('QUERY_STRING'))
         if 'lang' in query_string:
             self.value = query_string.get('lang')[0]
-            print 'Extracted Lang from Query-String: {lang}'.format(
-                lang=self.value)
 
         self.app.params['lang'] = self.value
 
