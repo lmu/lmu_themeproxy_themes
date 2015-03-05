@@ -6,9 +6,14 @@
     <theme href="theme/theme.html" />
     <notheme href="afunctions.cmf" />
     
-    
+<!--    
     <replace content-children="/html/head/title"
              theme-children="/html/head/title" />
+-->
+
+    <replace content="/html/head/title" >
+<title>Cloud-Printing</title>
+    </replace>
       
     <after content="/html/head/script"
             theme-children="/html/head" />
@@ -27,7 +32,7 @@
     <replace css:theme-children="#lang" css:content="#topnav" />
 
     <replace css:theme="#dep-logo" >
-        <a id="dep-logo" href="https://www.printservice.uni-muenchen.de/" titel="Printservice" >Printservice - Cloud-Printing</a>
+        <a id="dep-logo" href="https://www.printservice.uni-muenchen.de/" titel="Printservice" >Cloud Printing</a>
     </replace>
 
     <drop css:content="table" attributes="style" />
