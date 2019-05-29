@@ -51,7 +51,6 @@
         <replace css:theme-children="#content" css:content-children="#bd" />
         <!--<replace css:theme-children="#main" css:content-children="#bd" />-->
 
-
         <drop css:theme="#mainNav" />
         <drop css:theme="#above-content" />
         <drop css:theme="#after-content" />
