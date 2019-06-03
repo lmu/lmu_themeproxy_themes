@@ -121,6 +121,10 @@ div#bc h5 {
 
 }
 
+#main p {
+    margin-bottom: 0.5em;
+}
+
 #main li {
     list-style-type: square;
     list-style-position: outside;
@@ -258,9 +262,36 @@ fieldset.m-search-wrapper {
 
 .contentcontainer {
     width: 550px;
+    padding-bottom: 0;
+}
+
+.after-content {
+    margin-bottom: 1em;
 }
 
 .service {
     min-height: 0;
     width: 360px;
+}
+
+.alert-box {
+    padding: 15px; 
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+    color: #000;
+    font-size: 150%;
+}
+
+.alert-box.info {
+    border: 2px solid #74bfdd; 
+    background-color: #a0d3e8; 
+    border-radius: 5px; 
+    color: #000;
+}
+
+.alert-box.warning {
+    border: 2px solid #de770f; 
+    background-color: #f08a24; 
+    border-radius: 5px; 
+    color: #ffffff; 
 }
