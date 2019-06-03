@@ -146,6 +146,7 @@ div#bc h5 {
 #main h3 {
     color: #000;
     font-weight: normal;
+    text-transform: none;
 }
 
 #main h3 {
