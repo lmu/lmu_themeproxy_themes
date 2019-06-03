@@ -295,3 +295,15 @@ fieldset.m-search-wrapper {
     border-radius: 5px; 
     color: #ffffff; 
 }
+
+.left {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.right {
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
